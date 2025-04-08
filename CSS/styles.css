@@ -9,6 +9,24 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
+p{
+    margin-left: 30%;
+    margin-right: 30%; 
+}
+.SD img{
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    padding: 20px;
+   
+}
+.SD1 img{
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    padding: 20px;
+   
+}
 body{
     background-image:  url("../Images/index_background.jpg");
     background-size: cover;
@@ -16,3 +34,25 @@ body{
     background-position:top;
     margin: 0;
 }
+table{
+    margin-left: 30%;
+    margin-right: 30%; 
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px;
+    
+}
+.Row1{
+    background-color: rgba(211, 211, 211,0.3);
+    border-radius: 15px;
+    padding-right: 50%;   
+    
+}
+.tableText p{
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255,0.5);
+    border-style: solid;
+    border-radius: 5px;
+}
+
