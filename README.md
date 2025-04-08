@@ -1,2 +1,2 @@
 # HTML_DogLovers
-Coursework during my 4th semester of university
+Coursework for my 4th semester of university
