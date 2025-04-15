@@ -1,0 +1,117 @@
+nav{
+    background-color: #2f4f4f;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+  color: #f1f1f1    ;
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 17px
+  }
+  nav a:hover{
+    background-color: #b2e0a2;
+  color: black;
+  }
+
+  nav a.active{
+    background-color: #9dc183;
+  color: white;
+  }
+  nav a.active:hover{
+    background-color: #b2e0a2;
+  color: black;
+  }
+
+h1{ 
+    font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      color: #2f4f4f;
+      background-color: rgba(255, 255, 255, 0.75); 
+      padding: 20px 40px;
+      margin: 30px auto;
+      text-align: center;
+      border-radius: 20px;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 2px #ffffff4e;
+        
+    }
+    p{
+        margin-left: 30%;
+        margin-right: 30%; 
+    }
+    body{
+        background-image:  url("../Images/about_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:top;
+        margin: 0;
+    }
+    .about-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        max-width: 1000px;
+        background-color: rgba(240, 248, 255, 0.4);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      .about-block:nth-child(even) {
+        flex-direction: row-reverse; /* alternate left-right layout */
+      }
+      
+      .about-text {
+        flex: 1;
+        min-width: 280px;
+        max-width: 500px; /* Limits width for better readability */
+            margin: 10px 20px;
+        
+      }
+      
+      .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 20px; 
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .about-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+footer{
+    background-color: #2f4f4f;
+}
+footer ul{
+    display: inline;
+    color: #f1f1f1;
+    
+}
+footer ul li{
+    display: block;
+    padding: 5px;
+    
+}
+footer ul li a{
+    color: lime;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: green;
+    text-decoration: none;
+}
