@@ -1,0 +1,110 @@
+nav{
+    background-color: #2f4f4f;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+  color: #f1f1f1    ;
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 17px
+  }
+nav a:hover{
+    background-color: #b2e0a2;
+  color: black;
+  }
+
+nav a.active{
+    background-color: #9dc183;
+  color: white;
+  }
+nav a.active:hover{
+    background-color: #b2e0a2;
+  color: black;
+  }
+
+body{
+    background-image:  url("../Images/contact_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    margin: 0;
+}
+
+h1{ 
+    font-family: 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      color: #2f4f4f;
+      background-color: rgba(255, 255, 255, 0.75); 
+      padding: 20px 40px;
+      margin: 30px auto;
+      text-align: center;
+      border-radius: 20px;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 2px #ffffff4e;
+        
+    }
+
+    input[type=text], input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .form {
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-bottom: 5%;
+      }
+      .map{
+        width: 50%;
+      }
+
+footer{
+    background-color: #2f4f4f;
+}
+footer ul{
+    display: inline;
+    color: #f1f1f1;
+    
+}
+footer ul li{
+    display: block;
+    padding: 5px;
+    
+}
+footer ul li a{
+    color: lime;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: green;
+    text-decoration: none;
+}
