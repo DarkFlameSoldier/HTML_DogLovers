@@ -5,26 +5,25 @@ nav{
     padding: 10px;
 }
 
-nav a {
-  color: #f1f1f1    ;
-  text-align: center;
-  padding: 14px 16px;
-
-  text-decoration: none;
-  font-size: 17px
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2f4f4f;
+    padding: 10px;
   }
-  nav a:hover{
-    background-color: #b2e0a2;
-  color: black;
+  
+  nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 20px;
   }
-
-  nav a.active{
+  
+  nav a.active {
     background-color: #9dc183;
-  color: white;
   }
-  nav a.active:hover{
+  
+  nav a:hover {
     background-color: #b2e0a2;
-  color: black;
   }
 
 body{
@@ -34,6 +33,19 @@ body{
     background-position:top;
     margin: 0;
 }
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: #2f4f4f;
+    background-color: rgba(255, 255, 255, 0.75); 
+    padding: 20px 40px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px #ffffff4e;
+}
   
 .content-block {
     display: flex;
@@ -41,7 +53,7 @@ body{
     justify-content: center;
     margin: 2em auto;
     max-width: 900px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(240, 248, 255,0.5);
     padding: 1em;
     border-radius: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
@@ -56,46 +68,55 @@ body{
 }
 
 .content-block p {
-    flex: 1;
-    font-size: 1.2em;
-    color: #111;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255,0.5);
+    border-style: solid;
+    border-radius: 5px;
 }
 
 .content-block.reverse {
     flex-direction: row-reverse;
 }
 
-.disclaimer {
-    text-align: center;
-    margin-top: 3em;
-    font-size: 0.9em;
-    color: #222;
-}
-
-footer{
+footer {
     background-color: #2f4f4f;
-}
-footer ul{
-    display: inline;
-    color: #f1f1f1;
-    
-}
-footer ul li{
-    display: block;
-    padding: 5px;
-    
-}
-footer ul li a{
-    color: lime;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 5px 0;
+  }
+  
+  footer ul li a {
+    color: #4CAF50;
     text-decoration: none;
-}
-footer ul li a:hover{
-    color: green;
-    text-decoration: none;
-}
-footer p{
-  color:#f1f1f1;
-  font-size: 9px;
-  text-align: center;
-}
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
 
+  @media (min-width: 768px) {
+    .content-block {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-block.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .content-block p {
+        text-align: left;
+    }
+}

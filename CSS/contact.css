@@ -1,115 +1,126 @@
-nav{
-    background-color: #2f4f4f;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px;
+
+
+body {
+  background-image:  url("../Images/contact_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2f4f4f;
+  padding: 10px;
 }
 
 nav a {
-  color: #f1f1f1    ;
-  text-align: center;
-  padding: 14px 16px;
-
+  color: #f1f1f1;
   text-decoration: none;
-  font-size: 17px
-  }
-nav a:hover{
-    background-color: #b2e0a2;
-  color: black;
-  }
-
-nav a.active{
-    background-color: #9dc183;
-  color: white;
-  }
-nav a.active:hover{
-    background-color: #b2e0a2;
-  color: black;
-  }
-
-body{
-    background-image:  url("../Images/contact_background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:top;
-    margin: 0;
+  padding: 10px 20px;
 }
 
-h1{ 
-    font-family: 'Poppins', sans-serif;
-      font-size: 2.8rem;
-      color: #2f4f4f;
-      background-color: rgba(255, 255, 255, 0.75); 
-      padding: 20px 40px;
-      margin: 30px auto;
-      text-align: center;
-      border-radius: 20px;
-      max-width: 700px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      text-shadow: 1px 1px 2px #ffffff4e;
-        
-    }
+nav a.active {
+  background-color: #9dc183;
+}
 
-    input[type=text], input[type=email], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      
-      input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      input[type=submit]:hover {
-        background-color: #45a049;
-      }
-      
-      .form {
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 20px;
-        margin-left: 24%;
-        margin-right: 24%;
-        margin-bottom: 5%;
-      }
-      .map{
-        width: 50%;
-      }
+nav a:hover {
+  background-color: #b2e0a2;
+}
 
-footer{
-    background-color: #2f4f4f;
-}
-footer ul{
-    display: inline;
-    color: #f1f1f1;
-    
-}
-footer ul li{
-    display: block;
-    padding: 5px;
-    
-}
-footer ul li a{
-    color: lime;
-    text-decoration: none;
-}
-footer ul li a:hover{
-    color: green;
-    text-decoration: none;
-}
-footer p{
-  color:#f1f1f1;
-  font-size: 9px;
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  color: #2f4f4f;
+  background-color: rgba(255, 255, 255, 0.75); 
+  padding: 20px 0px;
+  margin: 30px auto;
   text-align: center;
+  border-radius: 20px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px #ffffff4e;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form input, .form select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#googleMap {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #2f4f4f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+}
+
+footer ul li a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .form {
+    padding: 10px;
+  }
 }
