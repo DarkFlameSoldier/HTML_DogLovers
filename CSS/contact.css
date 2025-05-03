@@ -108,3 +108,8 @@ footer ul li a:hover{
     color: green;
     text-decoration: none;
 }
+footer p{
+  color:#f1f1f1;
+  font-size: 9px;
+  text-align: center;
+}

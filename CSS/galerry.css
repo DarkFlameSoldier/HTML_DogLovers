@@ -1,0 +1,101 @@
+nav{
+    background-color: #2f4f4f;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+  color: #f1f1f1    ;
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 17px
+  }
+  nav a:hover{
+    background-color: #b2e0a2;
+  color: black;
+  }
+
+  nav a.active{
+    background-color: #9dc183;
+  color: white;
+  }
+  nav a.active:hover{
+    background-color: #b2e0a2;
+  color: black;
+  }
+
+body{
+    background-image:  url("../Images/Gallery_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    margin: 0;
+}
+  
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    gap: 20px;
+}
+
+.content-block img {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content-block p {
+    flex: 1;
+    font-size: 1.2em;
+    color: #111;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.disclaimer {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 0.9em;
+    color: #222;
+}
+
+footer{
+    background-color: #2f4f4f;
+}
+footer ul{
+    display: inline;
+    color: #f1f1f1;
+    
+}
+footer ul li{
+    display: block;
+    padding: 5px;
+    
+}
+footer ul li a{
+    color: lime;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: green;
+    text-decoration: none;
+}
+footer p{
+  color:#f1f1f1;
+  font-size: 9px;
+  text-align: center;
+}
+
