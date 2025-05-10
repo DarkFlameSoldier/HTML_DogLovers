@@ -77,12 +77,33 @@ h1 {
   background-color: #45a049;
 }
 
-#googleMap {
+/* #googleMap {
   width: 100%;
   height: 400px;
   margin: 20px 0;
   border: 2px solid #ccc;
   border-radius: 8px;
+} */
+ .contact-info {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 650px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+ }
+
+.map {
+  flex: 1;
+  min-width: 100px;
+  height: 250px;
+  border: 4px solid #3a542d;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 footer {
