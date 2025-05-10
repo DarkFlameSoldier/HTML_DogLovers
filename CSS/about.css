@@ -41,12 +41,6 @@ h1{
       text-shadow: 1px 1px 2px #ffffff4e;
         
     }
-    p{
-      font-size: 1.2rem;
-      line-height: 1.8;
-        margin-left: 30%;
-        margin-right: 30%; 
-    }
     body{
         background-image:  url("../Images/about_background.jpg");
         background-size: cover;
@@ -54,73 +48,27 @@ h1{
         background-position:top;
         margin: 0;
     }
-    .about-block {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 30px auto;
-        max-width: 1000px;
-        background-color: rgba(240, 248, 255, 0.4);
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      }
-      
-      .about-block:nth-child(even) {
-        flex-direction: row-reverse; /* alternate left-right layout */
-      }
-      
-      .about-text {
-        flex: 2;
-        min-width: 280px;
-        max-width: 700px; /* Limits width for better readability */
-        margin: 10px 20px;
-        
-      }
-      
-      .about-text p {
-        font-size: 1.4rem;
-        line-height: 1.6;
-        padding: 20px 40px;
-        background-color: rgba(255, 255, 255, 0.75);
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      
-      .about-image img {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
-
-footer{
+footer {
     background-color: #2f4f4f;
-}
-footer ul{
-    display: inline;
-    color: #f1f1f1;
-    
-}
-footer ul li{
-    display: block;
-    padding: 5px;
-    
-}
-footer ul li a{
-    color: lime;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 5px 0;
+  }
+  
+  footer ul li a {
+    color: #4CAF50;
     text-decoration: none;
-}
-footer ul li a:hover{
-    color: green;
-    text-decoration: none;
-}
-
-footer p {
-  color: #f1f1f1;
-  font-size: 9px;
-  display: block;
-  text-align: center;
-}
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
