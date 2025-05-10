@@ -33,7 +33,7 @@ body{
     background-position:top;
     margin: 0;
 }
-h1{
+/* h1{
     font-family: 'Poppins', sans-serif;
     font-size: 2.8rem;
     color: #2f4f4f;
@@ -79,6 +79,103 @@ h1{
 
 .content-block.reverse {
     flex-direction: row-reverse;
+} */
+
+/* .container{
+  position:relative;
+  width: 900px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+.carousel{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel_face{
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display:flex;
+}
+
+span{
+  margin:auto;
+  font-size: 2rem;
+}
+
+.carousel_face:nth-child(1){
+  background-image: url("../Images/Daisy.jpg");
+  transform: rotateY(72deg)translateZ(550px);
+}
+
+.carousel_face:nth-child(2){
+  background-image: url("../Images/Bruno.jpg");
+  transform: rotateY(144deg)translateZ(550px);
+}
+
+.carousel_face:nth-child(3){
+  background-image: url("../Images/Luna.jpg");
+  transform: rotateY(216deg)translateZ(550px);
+}
+
+.carousel_face:nth-child(4){
+  transform: rotateY(288deg)translateZ(550px);
+}
+
+.carousel_face:nth-child(5){
+  transform: rotateY(360deg)translateZ(550px);
+}
+
+@keyframes rotate360{
+  from {
+      transform: rotateY(0deg);
+  }
+  to{
+      transform: rotateY(-360deg);
+  }
+} */
+
+.photo-roll {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-roll img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.photo-roll p {
+  font-size: 20px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.photo-roll button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #9dc183;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.photo-roll button:hover {
+  background-color: #b2e0a2;
 }
 
 footer {

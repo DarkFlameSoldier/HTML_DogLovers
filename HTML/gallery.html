@@ -15,7 +15,7 @@
         <a  href="about.html">About</a>
     </nav>
 
-    <div class="section">
+    <!-- <div class="section">
         <h1 class="welcome-title">🐾 Showcase: Our Lovely Members 🐾</h1>
 
         <div class="content-block">
@@ -34,7 +34,68 @@
         </div>
 
         
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="carousel">
+            <div class="carousel_face"><span>Elemental HERO Flame Wingman</span></div>
+            <div class="carousel_face"><span>Cyber End Dragon</span></div>
+            <div class="carousel_face"><span>Ancient Gear Golem</span></div>
+            <div class="carousel_face"><span>Galaxy-Eyes Photon Dragon</span></div>
+            <div class="carousel_face"><span>Sephylon The Ultimate Timelord</span></div>
+        </div>
+    </div> -->
+
+    <div class="photo-roll">
+        <img id="photo" src="../Images/Daisy.jpg" alt="Dog photo">
+        <p id="caption">Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️</p>
+        <button onclick="nextPhoto()">Previous ⬅️</button>
+        <button onclick="prevPhoto()">Next ➡️</button>
+
     </div>
+    
+    <script>
+        const photos = [
+            {
+                src: "../Images/Daisy.jpg",
+                caption: "Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️"
+            },
+            {
+                src: "../Images/Bruno.jpg",
+                caption: "Here's Bruno, always the life of the park with his endless energy and tennis ball obsession. 🎾"
+            },
+            {
+                src: "../Images/Luna.jpg",
+                caption: "Luna loves cozy blankets and long naps on rainy days. A true indoor queen. 💤☔"
+            },
+            {
+                src: "../Images/Max.jpg",
+                caption: "Max is the ultimate beach boy, never without his frisbee and sandy paws. 🏖️🐾"
+            },
+            {
+                src: "../Images/Bella.jpg",
+                caption: "Bella’s the sassiest little diva in her pink scarf. 💅🐕"
+            },
+            {
+                src: "../Images/Rocky.jpg",
+                caption: "Rocky may look tough, but he's a softie who loves belly rubs. 🐾❤️"
+            }
+    ];
+    
+        let index = 0;
+    
+        function nextPhoto() {
+            index = (index + 1) % photos.length;
+            document.getElementById('photo').src = photos[index].src;
+            document.getElementById('caption').textContent = photos[index].caption;
+        }
+
+        function prevPhoto() {
+            index = (index - 1 + photos.length) % photos.length;
+            document.getElementById('photo').src = photos[index].src;
+            document.getElementById('caption').textContent = photos[index].caption;
+        }
+    </script>
 
     <footer>
         <ul>
