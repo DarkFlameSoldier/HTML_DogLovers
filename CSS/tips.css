@@ -47,6 +47,7 @@ nav a:hover {
 .resources h1 {
      background-color: rgba(255, 255, 255, 0.75);
      border-radius: 20px;
+     padding: 10px;
     text-align: center;
     font-size: 2.5rem;
     color: #2f4f4f;
@@ -85,6 +86,16 @@ nav a:hover {
 .section li {
     margin: 10px 0;
     line-height: 1.6;
+}
+
+section li a {
+    color: #40b2b2;
+    text-decoration: none;
+}
+.section li a:hover {
+    font-weight: bold;
+    color: #246565;
+    text-decoration: underline;
 }
 
 footer {
