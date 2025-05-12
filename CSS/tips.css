@@ -123,3 +123,100 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline;
 }
+
+/* Medium screens (tablets) */
+@media (max-width: 900px) {
+    .resources {
+        margin: 30px auto;
+    }
+    
+    .resources h1 {
+        font-size: 2rem;
+    }
+    
+    .resources-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .resources {
+        margin: 20px auto;
+    }
+    
+    .resources h1 {
+        font-size: 1.8rem;
+        padding: 8px;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 500px) {
+    body {
+        background-position: center;
+    }
+    
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .resources {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    
+    .resources h1 {
+        font-size: 1.5rem;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .section h2 {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    
+    .section ul {
+        max-width: 100%;
+    }
+    
+    footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 350px) {
+    nav a {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .resources h1 {
+        font-size: 1.3rem;
+    }
+}

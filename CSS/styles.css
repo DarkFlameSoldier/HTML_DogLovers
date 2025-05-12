@@ -176,14 +176,134 @@ footer ul li a:hover {
         max-width: 100%;
     }
 }
+/* Medium devices (tablets, 768px and below) */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
         padding: 15px 20px;
+        margin: 20px auto;
+        max-width: 90%;
     }
-    
+
+    .about-block {
+        width: 95%;
+        padding: 12px;
+    }
+
     .about-text p {
         font-size: 1.1rem;
-        padding: 15px;
+        padding: 12px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small devices (landscape phones, 600px and below) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        padding: 12px 15px;
+    }
+
+    .about-section {
+        padding: 10px;
+    }
+
+    .about-block {
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* Extra small devices (portrait phones, 480px and below) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 10px 12px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .about-block {
+        padding: 10px;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small devices (320px and below) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation adjustments for small screens */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Background image adjustments for mobile */
+@media (max-width: 600px) {
+    body {
+        background-position: center;
     }
 }

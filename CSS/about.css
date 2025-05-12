@@ -219,13 +219,143 @@ footer {
   footer ul li a:hover {
     text-decoration: underline;
   }
-  @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        padding: 15px 20px;
+        margin: 20px auto;
+    }
 
-  nav a {
-    text-align: center;
-    padding: 10px;
-  }
+    .story, .wholeTeam, .schedule {
+        padding: 15px 20px;
+        margin: 20px auto;
+    }
+
+    .story h2, .meatTheTeam h2, .schedule h2 {
+        font-size: 1.8rem;
+    }
+
+    .story p, .schedule p, .schedule ul {
+        font-size: 1.2rem;
+    }
+
+    .team {
+        padding: 20px;
+    }
+
+    .team-member {
+        flex: 0 0 200px;
+    }
+
+    .map {
+        height: 350px;
+    }
+}
+
+/* Small devices (landscape phones, 600px and below) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        padding: 12px 15px;
+    }
+
+    .story, .wholeTeam, .schedule {
+        padding: 12px 15px;
+        margin: 15px auto;
+    }
+
+    .story h2, .meatTheTeam h2, .schedule h2 {
+        font-size: 1.5rem;
+    }
+
+    .story p, .schedule p, .schedule ul {
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
+
+    .team {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .team-member {
+        flex: 0 0 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .map {
+        height: 300px;
+        width: 90%;
+    }
+}
+
+/* Extra small devices (portrait phones, 480px and below) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 10px 12px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .story, .wholeTeam, .schedule {
+        padding: 10px 12px;
+        margin: 12px auto;
+    }
+
+    .story h2, .meatTheTeam h2, .schedule h2 {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .story p, .schedule p, .schedule ul {
+        font-size: 1rem;
+        margin: 12px 0;
+    }
+
+    .team img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map {
+        height: 250px;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small devices (320px and below) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    nav a {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .story h2, .meatTheTeam h2, .schedule h2 {
+        font-size: 1.1rem;
+    }
+
+    .map {
+        height: 200px;
+    }
+}
+
+/* Adjust body padding for footer on mobile */
+@media (max-width: 600px) {
+    body {
+        padding-bottom: 150px;
+    }
 }

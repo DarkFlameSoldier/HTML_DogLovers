@@ -218,17 +218,134 @@ footer {
     text-decoration: underline;
   }
 
-  @media (min-width: 768px) {
-    .content-block {
-        flex-direction: row;
-        justify-content: center;
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .photo-roll {
+        margin: 30px 20px;
+        padding: 20px;
+        max-width: calc(100% - 40px);
     }
 
-    .content-block.reverse {
-        flex-direction: row-reverse;
+    .photo-roll img {
+        max-height: 400px;
     }
 
-    .content-block p {
-        text-align: left;
+    .photo-roll p {
+        font-size: 18px;
+    }
+
+    .photo-roll button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+    }
+}
+
+/* Small devices (landscape phones, 600px and below) */
+@media (max-width: 600px) {
+    .photo-roll {
+        margin: 25px 15px;
+        padding: 15px;
+    }
+
+    .photo-roll img {
+        max-height: 350px;
+    }
+
+    .photo-roll p {
+        font-size: 16px;
+        margin: 12px 0;
+    }
+
+    .photo-roll button {
+        padding: 8px 16px;
+        font-size: 15px;
+        margin: 0 8px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small devices (portrait phones, 480px and below) */
+@media (max-width: 480px) {
+    .photo-roll {
+        margin: 20px 10px;
+        padding: 12px;
+    }
+
+    .photo-roll img {
+        max-height: 300px;
+    }
+
+    .photo-roll p {
+        font-size: 15px;
+    }
+
+    .photo-roll button {
+        padding: 7px 14px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small devices (320px and below) */
+@media (max-width: 320px) {
+    .photo-roll {
+        margin: 15px 8px;
+        padding: 10px;
+    }
+
+    .photo-roll img {
+        max-height: 250px;
+    }
+
+    .photo-roll p {
+        font-size: 14px;
+    }
+
+    .photo-roll button {
+        padding: 6px 12px;
+        font-size: 13px;
+        margin: 0 4px;
+    }
+
+    nav a {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation adjustments for small screens */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
