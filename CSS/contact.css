@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("../Images/contact_background.jpg");
@@ -37,7 +35,7 @@ nav a:hover {
 }
 .main-content {
     flex: 1;
-    padding-bottom: 40px; /* Increased padding to prevent footer overlap */
+    padding-bottom: 40px;
 }
 
 h1 {
@@ -108,13 +106,13 @@ padding-top: 10px;
 
 .map {
     max-width: 1000px;
-    height: 450px; /* Increased height for better visibility */
+    height: 450px;
     border: 4px solid #3a542d;
-    margin: 30px auto; /* More vertical spacing */
+    margin: 30px auto;
     border-radius: 10px;
     overflow: hidden;
-    position: relative; /* Ensures map stays in document flow */
-    z-index: 1; /* Keeps map above footer if they overlap */
+    position: relative;
+    z-index: 1;
 }
 
 footer {
@@ -122,10 +120,10 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: relative; /* Changed from absolute to relative */
+    position: relative;
     width: 100%;
     margin-top: auto;
-    z-index: 0; /* Ensures footer stays below content */
+    z-index: 0;
 }
 
 footer ul {
@@ -146,7 +144,6 @@ footer ul li a:hover {
   text-decoration: underline;
 }
 
-/* Medium devices (tablets, 768px and below) */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2rem;
@@ -171,7 +168,6 @@ footer ul li a:hover {
     }
 }
 
-/* Small devices (landscape phones, 600px and below) */
 @media (max-width: 600px) {
     h1 {
         font-size: 1.8rem;
@@ -206,7 +202,6 @@ footer ul li a:hover {
     }
 }
 
-/* Extra small devices (portrait phones, 480px and below) */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
@@ -247,7 +242,6 @@ footer ul li a:hover {
     }
 }
 
-/* Very small devices (320px and below) */
 @media (max-width: 320px) {
     h1 {
         font-size: 1.3rem;
@@ -281,7 +275,6 @@ footer ul li a:hover {
     }
 }
 
-/* Adjust body padding for footer on mobile */
 @media (max-width: 600px) {
     .main-content {
         padding-bottom: 30px;

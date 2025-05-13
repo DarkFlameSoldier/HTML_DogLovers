@@ -35,9 +35,9 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     margin: 0;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
 }
 /* h1{
     font-family: 'Poppins', sans-serif;
@@ -148,16 +148,16 @@ span{
 } */
 
 .main-content {
-    flex: 1; /* This makes the content expand to push footer down */
-    padding-bottom: 20px; /* Space before footer */
+    flex: 1;
+    padding-bottom: 20px;
 }
 
 .photo-roll {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.7);
-    margin: 40px auto 20px auto; /* Adjusted margins */
-    padding: 30px; /* More padding */
-    max-width: 800px; /* Slightly wider */
+    margin: 40px auto 20px auto;
+    padding: 30px;
+    max-width: 800px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   
@@ -165,7 +165,7 @@ span{
 
 .photo-roll img {
   width: 100%;
-      max-height: 500px; /* Larger image display */
+      max-height: 500px;
     margin-bottom: 20px;
   object-fit: cover;
   border-radius: 12px;
@@ -179,8 +179,8 @@ span{
 }
 
 .photo-roll button {
-  margin: 0 10px; /* Space between buttons */
-    padding: 12px 25px; /* Larger buttons */
+  margin: 0 10px;
+    padding: 12px 25px;
   font-size: 18px;
   background-color: #9dc183;
   border: none;
@@ -197,7 +197,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* Pushes footer to bottom */
+    margin-top: auto;
 }
   
   footer ul {
@@ -218,7 +218,7 @@ footer {
     text-decoration: underline;
   }
 
-/* Medium devices (tablets, 768px and below) */
+
 @media (max-width: 768px) {
     .photo-roll {
         margin: 30px 20px;
@@ -244,7 +244,7 @@ footer {
     }
 }
 
-/* Small devices (landscape phones, 600px and below) */
+
 @media (max-width: 600px) {
     .photo-roll {
         margin: 25px 15px;
@@ -276,7 +276,7 @@ footer {
     }
 }
 
-/* Extra small devices (portrait phones, 480px and below) */
+
 @media (max-width: 480px) {
     .photo-roll {
         margin: 20px 10px;
@@ -308,7 +308,7 @@ footer {
     }
 }
 
-/* Very small devices (320px and below) */
+
 @media (max-width: 320px) {
     .photo-roll {
         margin: 15px 8px;
@@ -335,7 +335,7 @@ footer {
     }
 }
 
-/* Navigation adjustments for small screens */
+
 @media (max-width: 500px) {
     nav {
         flex-direction: column;

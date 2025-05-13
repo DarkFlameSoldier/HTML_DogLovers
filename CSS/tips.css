@@ -104,7 +104,7 @@ body {
  footer ul li a:hover {
      text-decoration: underline;
 }
-/* Medium screens (tablets) */
+
  @media (max-width: 900px) {
      .resources {
          margin: 30px auto;
@@ -119,7 +119,7 @@ body {
          font-size: 1.3rem;
     }
 }
-/* Small screens (large phones) */
+
  @media (max-width: 700px) {
      nav {
          flex-wrap: wrap;
@@ -140,7 +140,7 @@ body {
          padding: 15px;
     }
 }
-/* Extra small screens (phones) */
+
  @media (max-width: 500px) {
      body {
          background-position: center;
@@ -187,7 +187,7 @@ body {
     }
 }
 
-/* Very small screens */
+
  @media (max-width: 350px) {
      nav a {
          padding: 5px 8px;

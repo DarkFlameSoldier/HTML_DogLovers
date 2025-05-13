@@ -54,7 +54,7 @@ h1 {
 .main-content {
     flex: 1;
     width: 100%;
-    max-width: 1400px; /* Prevent excessive stretching */
+    max-width: 1400px; 
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -69,58 +69,58 @@ h1 {
 
 .about-block {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     margin: 0 auto 20px auto;
     max-width: 1000px;
-    width: 90%; /* Use percentage width */
+    width: 90%; 
     background-color: rgba(240, 248, 255, 0.4);
     border-radius: 15px;
     padding: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevent content from overflowing */
+    overflow: hidden; 
 }
 
       
       .about-block:nth-child(even) {
-        flex-direction: row-reverse; /* alternate left-right layout */
+        flex-direction: row-reverse; 
       }
       
       .about-text {
-     flex: 1 1 300px; /* Grow, shrink, with minimum width */
-    min-width: 0; /* Allow text to shrink below min-content */
+     flex: 1 1 300px; 
+    min-width: 0; 
     margin: 10px;
     max-width: 600px;
         
       }
       
       .about-text p {
-    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive font size */
+    font-size: clamp(1rem, 2vw, 1.2rem); 
     line-height: 1.4;
     padding: 12px 20px;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 0;
-    word-wrap: break-word; /* Prevent long words from overflowing */
+    word-wrap: break-word; 
     overflow-wrap: break-word;
       }
       
 .about-image {
-    flex: 0 1 auto; /* Don't grow, but can shrink */
+    flex: 0 1 auto; 
     margin: 10px;
-    max-width: 100%; /* Ensure image doesn't overflow container */
+    max-width: 100%; 
 }
       
       .about-image img {
     width: 100%;
     max-width: 280px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     max-height: 350px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    object-fit: cover; /* Ensure images maintain proportions */
+    object-fit: cover; 
       }
 
 footer {
@@ -157,7 +157,7 @@ footer ul li a:hover {
     }
 }
 
-/* Add responsive adjustments */
+
 @media (max-width: 768px) {
     .about-block {
         flex-direction: column;
@@ -176,7 +176,7 @@ footer ul li a:hover {
         max-width: 100%;
     }
 }
-/* Medium devices (tablets, 768px and below) */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -206,7 +206,7 @@ footer ul li a:hover {
     }
 }
 
-/* Small devices (landscape phones, 600px and below) */
+
 @media (max-width: 600px) {
     h1 {
         font-size: 1.8rem;
@@ -240,7 +240,7 @@ footer ul li a:hover {
     }
 }
 
-/* Extra small devices (portrait phones, 480px and below) */
+
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
@@ -270,7 +270,6 @@ footer ul li a:hover {
     }
 }
 
-/* Very small devices (320px and below) */
 @media (max-width: 320px) {
     h1 {
         font-size: 1.3rem;
@@ -286,7 +285,6 @@ footer ul li a:hover {
     }
 }
 
-/* Navigation adjustments for small screens */
 @media (max-width: 500px) {
     nav {
         flex-direction: column;
@@ -301,7 +299,6 @@ footer ul li a:hover {
     }
 }
 
-/* Background image adjustments for mobile */
 @media (max-width: 600px) {
     body {
         background-position: center;
