@@ -1,106 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showcase - Dog Lovers Club</title>
-    <link rel="stylesheet" href="../CSS/galerry.css">
-</head>
-<body>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="gallery.html">Gallery</a>
-        <a href="contact.html">Contacts</a>
-        <a href="about.html">About</a>
-        <a href="tips.html">Help</a>
-    </nav>
-
-    <!-- <div class="section">
-        <h1 class="welcome-title">🐾 Showcase: Our Lovely Members 🐾</h1>
-
-        <div class="content-block">
-            <img src="../Images/Daisy.jpg" alt="Happy dog 1">
-            <center><p>Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️</p></center>
-        </div>
-
-        <div class="content-block reverse">
-            <img src="../Images/Bruno.jpg" alt="Playful dog 2">
-            <p>Here's Bruno, always the life of the park with his endless energy and tennis ball obsession. 🎾</p>
-        </div>
-
-        <div class="content-block">
-            <img src="../Images/Luna.jpg" alt="Relaxed dog 3">
-            <p>Luna loves cozy blankets and long naps on rainy days. A true indoor queen. 💤☔</p>
-        </div>
-
-        
-    </div> -->
-<div class="main-content">
-    <div class="photo-roll">
-        <img id="photo" src="../Images/Daisy.jpg" alt="Dog photo">
-        <p id="caption">Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️</p>
-        <button onclick="nextPhoto()">Previous ⬅️</button>
-        <button onclick="prevPhoto()">Next ➡️</button>
-
-    </div>
-    
-    <script>
-        const photos = [
-            {
-                src: "../Images/Daisy.jpg",
-                caption: "Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️"
-            },
-            {
-                src: "../Images/Bruno.jpg",
-                caption: "Here's Bruno, always the life of the park with his endless energy and tennis ball obsession. 🎾"
-            },
-            {
-                src: "../Images/Luna.jpg",
-                caption: "Luna loves cozy blankets and long naps on rainy days. A true indoor queen. 💤☔"
-            },
-            {
-                src: "../Images/Max.jpg",
-                caption: "Max is the ultimate beach boy, never without his frisbee and sandy paws. 🏖️🐾"
-            },
-            {
-                src: "../Images/Bella.jpg",
-                caption: "Bella’s the sassiest little diva in her pink scarf. 💅🐕"
-            },
-            {
-                src: "../Images/Rocky.jpg",
-                caption: "Rocky may look tough, but he's a softie who loves belly rubs. 🐾❤️"
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Showcase - Dog Lovers Club</title>
+      <link rel="stylesheet" href="../CSS/galerry.css">
+   </head>
+   <body>
+      <nav>
+         <a href="index.html">Home</a>
+         <a class="active" href="gallery.html">Gallery</a>
+         <a href="contact.html">Contacts</a>
+         <a href="about.html">About</a>
+         <a href="tips.html">Help</a>
+      </nav>
+      <!-- <div class="section">
+         <h1 class="welcome-title">🐾 Showcase: Our Lovely Members 🐾</h1>
+         
+         <div class="content-block">
+             <img src="../Images/Daisy.jpg" alt="Happy dog 1">
+             <center><p>Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️</p></center>
+         </div>
+         
+         <div class="content-block reverse">
+             <img src="../Images/Bruno.jpg" alt="Playful dog 2">
+             <p>Here's Bruno, always the life of the park with his endless energy and tennis ball obsession. 🎾</p>
+         </div>
+         
+         <div class="content-block">
+             <img src="../Images/Luna.jpg" alt="Relaxed dog 3">
+             <p>Luna loves cozy blankets and long naps on rainy days. A true indoor queen. 💤☔</p>
+         </div>
+         
+         
+         </div> -->
+      <div class="main-content">
+         <div class="photo-roll">
+            <img id="photo" src="../Images/Daisy.jpg" alt="Dog photo">
+            <p id="caption">Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️</p>
+            <button onclick="prevPhoto()">Previous ⬅️</button>
+            <button onclick="nextPhoto()">Next ➡️</button>
+         </div>
+         <script>
+            const photos = [
+                {
+                    src: "../Images/Daisy.jpg",
+                    caption: "Meet Daisy, a rescue pup who's now living her best life hiking with her family. 🐶⛰️"
+                },
+                {
+                    src: "../Images/Bruno.jpg",
+                    caption: "Here's Bruno, always the life of the park with his endless energy and tennis ball obsession. 🎾"
+                },
+                {
+                    src: "../Images/Luna.jpg",
+                    caption: "Luna loves cozy blankets and long naps on rainy days. A true indoor queen. 💤☔"
+                },
+                {
+                    src: "../Images/Max.jpg",
+                    caption: "Max is the ultimate beach boy, never without his frisbee and sandy paws. 🏖️🐾"
+                },
+                {
+                    src: "../Images/Bella.jpg",
+                    caption: "Bella’s the sassiest little diva in her pink scarf. 💅🐕"
+                },
+                {
+                    src: "../Images/Rocky.jpg",
+                    caption: "Rocky may look tough, but he's a softie who loves belly rubs. 🐾❤️"
+                }
+            ];
+            
+            let index = 0;
+            
+            function nextPhoto() {
+                index = (index + 1) % photos.length;
+                document.getElementById('photo').src = photos[index].src;
+                document.getElementById('caption').textContent = photos[index].caption;
             }
-    ];
-    
-        let index = 0;
-    
-        function nextPhoto() {
-            index = (index + 1) % photos.length;
-            document.getElementById('photo').src = photos[index].src;
-            document.getElementById('caption').textContent = photos[index].caption;
-        }
-
-        function prevPhoto() {
-            index = (index - 1 + photos.length) % photos.length;
-            document.getElementById('photo').src = photos[index].src;
-            document.getElementById('caption').textContent = photos[index].caption;
-        }
-    </script>
-</div>
-
-    <footer>
-        <ul>
+            
+            function prevPhoto() {
+                index = (index - 1 + photos.length) % photos.length;
+                document.getElementById('photo').src = photos[index].src;
+                document.getElementById('caption').textContent = photos[index].caption;
+            }
+         </script>
+      </div>
+      <footer>
+         <ul>
             <li>Prepared: Ivo Dimov</li>
             <li>Course: 2</li>
             <li>Specialty: KST</li>
             <li>Group: 1</li>
-        </ul>
-        <ul>
+         </ul>
+         <ul>
             <li>For: <a href="https://www1.tu-varna.bg/tu-varna/index.php">TU-Varna</a></li>
-        </ul>
-        <p>Any resemblance to real people is coincidental, the names are made up for aesthetic purposes!</p>
-        <p>All photos are shared with the permission of their owners.</p>
-    </footer>
-</body>
+         </ul>
+         <p>Any resemblance to real people is coincidental, the names are made up for aesthetic purposes!</p>
+         <p>All photos are shared with the permission of their owners.</p>
+      </footer>
+   </body>
 </html>
