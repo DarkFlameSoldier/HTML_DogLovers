@@ -267,6 +267,20 @@ footer ul li a:hover {
     }
 }
 
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* Adjust body padding for footer on mobile */
 @media (max-width: 600px) {
     .main-content {
